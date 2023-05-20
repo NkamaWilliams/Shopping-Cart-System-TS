@@ -171,7 +171,6 @@ function loadPreviousSession(user:User): void{
     let found = -1
 
     if (sessions.length > 0){
-        alert("I am in sessions")
         sessions.forEach(cart => {
             if (cart._user._email === user.getEmail()){
                 sessionIndex = sessions.indexOf(cart)

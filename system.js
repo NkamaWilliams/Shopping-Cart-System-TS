@@ -142,7 +142,6 @@ function loadPreviousSession(user) {
     var sessionIndex = -1;
     var found = -1;
     if (sessions.length > 0) {
-        alert("I am in sessions");
         sessions.forEach(function (cart) {
             if (cart._user._email === user.getEmail()) {
                 sessionIndex = sessions.indexOf(cart);

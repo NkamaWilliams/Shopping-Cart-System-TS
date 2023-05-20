@@ -30,6 +30,11 @@ nav a:hover{
     border-bottom: 2px solid white;
 }
 
+nav a img{
+    object-fit: contain;
+    height: 40px;
+}
+
 nav a.active{
     border-bottom: 2px solid white;
 }
@@ -57,6 +62,10 @@ div.image{
     margin: 10px auto;
     background-color: gray;
     border-radius: 50%;
+}
+
+div.image img{
+    width: 100%;
 }
 
 p#name{
