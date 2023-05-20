@@ -203,7 +203,7 @@ function sign_up(e) {
         e.getElementsByClassName("error")[0].style.display = "none";
     }
     registerUser(name, email, password);
-    window.location.href = "./sign_in.html";
+    window.location.href = "./index.html";
     return false;
 }
 function sign_in(e) {
