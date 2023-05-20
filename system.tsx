@@ -248,7 +248,7 @@ function sign_up(e:any): boolean{
 
     registerUser(name, email, password)
 
-    window.location.href = "./sign_in.html"
+    window.location.href = "./index.html"
     return false
 }
 
