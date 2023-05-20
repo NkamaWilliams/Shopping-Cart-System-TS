@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+
+    <link rel="stylesheet" href="shop.css">
+
+    <script src="./system.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="./home.html"><h1>E-Shopping</h1></a>
+
+        <div>
+            <a href="./sign_in.html">Sign in</a>
+            <a class="active" href="./sign_up.html">Sign up</a>
+            <a href="./cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <form onsubmit="return sign_up(this)" class="sign">
+        <h2>Create an account</h2>
+        <div class="info">
+            <section>
+                <div>
+                    <label>Full Name</label>
+                    <input pattern="[\w\s]+" type="text" name="name" placeholder="My name..." required/>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="example@mail.com..." required/>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <label for="pass">Password</label>
+                    <input type="password" name="password" id="pass" required/>
+                </div>
+                <div>
+                    <label for="pass2">Confirm Password</label>
+                    <input type="password" name="password2" id="pass2" required/>
+                </div>
+                <div class="error"><label></label>Passwords not similar</div>
+            </section>
+        </div>
+
+        <button class="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>

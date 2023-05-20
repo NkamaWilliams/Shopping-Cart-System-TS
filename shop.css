@@ -1,0 +1,350 @@
+:root{
+    --profile_pic: 250px;
+    --label1: 100px;
+    --label2: 250px;
+    --img: 120px
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+nav a:hover{
+    border-bottom: 2px solid white;
+}
+
+nav a.active{
+    border-bottom: 2px solid white;
+}
+
+nav a h1{
+    font-size: 2em;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/*Cart*/
+div.profile{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+div.image{
+    width: var(--profile_pic);
+    height: var(--profile_pic);
+    margin: 10px auto;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+p#name{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cart{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cart h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.cart article{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.cart article > div{
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+
+article h4{
+    text-align: center;
+    font-size: 20px;
+}
+
+article h4 b{
+    font-weight: lighter;
+}
+
+.cart-info{
+    box-sizing: border-box;
+} 
+
+.cart-info p, .cart-info span, .delete{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cart-info h3{
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.cart-info span{
+    font-weight: bold;
+}
+
+.delete:hover{
+    cursor: pointer;
+}
+
+.cart img{
+    object-fit:fill;
+    height: var(--img);
+    width: var(--img);
+    margin: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.cart button{
+    display: block;
+    width: max(50%, 200px);
+    margin: 30px auto;
+    height: 40px;
+}
+
+/*Homepage*/
+
+main{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main div.store{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 40px auto;
+}
+
+div.item{
+    box-sizing: border-box;
+    width: 27%;
+    min-width: 280px;
+    margin: 35px 20px;
+}
+
+div.item .img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+div.img img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+div.op div{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+div.op p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button:active{
+    border: none;
+}
+
+div.op div button{
+    width: 20%;
+    height: 100%;
+    font-size: larger;
+}
+
+div.op div input{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 60%;
+    margin: 0;
+    height: 100%;
+    background-color: lightgray;
+}
+
+div.op button{
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+}
+
+/*Sign In*/
+
+form{
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 850px;
+    margin: 70px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+form h2{
+    text-align: center;
+    font-size: 3em;
+    margin: 15px 0;
+}
+
+form button{
+    display: block;
+    width: 70%;
+    min-width: 200px;
+    height: 50px;
+    margin: 30px auto;
+    font-size: 20px;
+}
+
+div.info{
+    text-align: initial;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+div.info section{
+    width: 49%;
+    box-sizing: border-box;
+}
+
+div.info section > div{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+div.info label{
+    font-size: 21px;
+    display: inline-block;
+    width: var(--label1);
+}
+
+div.info input{
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    height: 35px;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+div.info .error{
+    color: red;
+    display: none;
+} 
+
+@media screen and (width < 750px){
+    nav a{
+        margin: 0 10px;
+    }
+
+    div.info{
+        flex-direction: column;
+    }
+
+    div.info section{
+        width: 100%;
+    }
+
+    div.info section > div{
+        align-items: initial;
+    }
+
+    div.info label{
+        width: var(--label2);
+    }
+
+    div.info input{
+        width: -webkit-fill-available;
+    }
+}
+
+@media screen and (width < 450px){
+    nav div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a{
+        font-size: 19px;
+        margin: 0 5px;
+    }
+
+    nav a h1{
+        font-size: 1.2em;
+    }
+
+    div.cart{
+        width: 100%;
+    }
+
+    div.info section > div{
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    div.info .error{
+        margin-left: initial;
+    }
+}

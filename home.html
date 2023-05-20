@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="shop.css">
+
+    <!-- <script>var exports={}</script> -->
+
+    <script src="./system.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="./home.html"><h1>E-Shopping</h1></a>
+
+        <div>
+            <a href="./sign_in.html">Sign in</a>
+            <a href="./sign_up.html">Sign up</a>
+            <a href="./cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="store">
+            <div class="item">
+                <div class="img">                    
+                    <img alt src="./BingWallpaper (2).jpg" />
+                </div>
+                <div class="op">
+                    <p>Real Estate</p>
+                    <div>
+                        <button onclick="decrement(this)" type="button">-</button>
+                        <input type="text" name="item" value="0" title="stuff">
+                        <button onclick="increment(this)" type="button">+</button>
+                    </div>
+                    <button onclick="addItem(this, 'Land', 1200000)" type="submit">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">                    
+                    <img alt src="./cake-2.jpg" />
+                </div>
+                <div class="op">
+                    <p>Cake</p>
+                    <div>
+                        <button onclick="decrement(this)" type="button">-</button>
+                        <input type="text" name="item" value="0" title="stuff">
+                        <button onclick="increment(this)" type="button">+</button>
+                    </div>
+                    <button onclick="addItem(this, 'Cake', 10000)" type="submit">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">                    
+                    <img alt src="./Coffee.jpg" />
+                </div>
+                <div class="op">
+                    <p>Coffee</p>
+                    <div>
+                        <button onclick="decrement(this)" type="button">-</button>
+                        <input type="text" name="item" value="0" title="stuff">
+                        <button onclick="increment(this)" type="button">+</button>
+                    </div>
+                    <button onclick="addItem(this, 'Coffee', 300)" type="submit">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img alt src="./workplace.jpg" />
+                </div>
+                <div class="op">
+                    <p>Laptop</p>
+                    <div>
+                        <button onclick="decrement(this)" type="button">-</button>
+                        <input type="text" name="item" value="0" title="stuff">
+                        <button onclick="increment(this)" type="button">+</button>
+                    </div>
+                    <button onclick="addItem(this, 'Laptop', 100000)" type="submit">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
